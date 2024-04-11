@@ -527,27 +527,14 @@
 		<p class="footer__copy"></p>
 	</footer>
 	<script>
-		
-		
-
-	</script>
 	
-	<script>
-		const a = document.getElementById("language-toggle");
-		a.addEventListener("change", idioma);
+				const checkbox = document.getElementById('language-toggle');
+				checkbox.addEventListener('change', function() {
+				window.location.href = checkbox.checked ? "indexen.html" : "index.html";
+			});
+			checkbox.checked=true
+		</script>
 
-		function idioma() {
-			if (a.checked == false) {
-				console.log(a.checked);
-
-				window.location.href = "index.html";
-			} else {
-				window.location.href = "indexen.html";
-			}
-		}
-		console.log(a.checked);
-		a.checked = false;
-	</script>
 </body>
 
 </html>
