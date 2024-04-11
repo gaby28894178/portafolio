@@ -1,14 +1,14 @@
-// const checkbox = document.getElementById('language-toggle');
+const lenguaje = document.querySelector('#language-toggle')
+const currentLang = window.location.href.includes('/indexen.html')
+lenguaje.checked= currentLang
+function changelenguaje(){
+    if(lenguaje.checked){
+        window.location.href='/indexen.html'
+    }
+    else{
+        window.location.href='/index.html'
+    }
+}
 
-// checkbox.addEventListener('change', function() {
-//     window.location.href = checkbox.checked ? "/indexen.html" : "/index.html";
-// });
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     if (location.href.includes("index.html")) {
-//         checkbox.checked = false;
-//     } else {
-//         checkbox.checked = true;
-//     }
-// });
-// export default  checkbox
+lenguaje.addEventListener('change', changelenguaje)
+export default changelenguaje;
