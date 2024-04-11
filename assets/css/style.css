@@ -89,7 +89,7 @@ html {
 }
 
 .grid--container {
-	max-width: 1024px;
+	max-width: 100%;
 	display: grid;
 	margin: 0 auto;
 	padding: 0 var(--mr-3);
@@ -99,6 +99,7 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 .btn {
@@ -111,7 +112,7 @@ html {
 	transition: all 0.3s ease-in-out;
 	color: var(--bg-color-section2);
 	background-color: var(--primary-color);
-	border: 1px solid orangered;
+	border: 1px solid rgb(141, 119, 111);
 
 	&:hover {
 		transform: translateY(-4px);
@@ -154,7 +155,8 @@ html {
 
 	.navbar {
 		justify-content: space-between;
-		border: 1px solid orange;
+		border: 1px solid rgb(12, 12, 12);
+		background-color: rgba(0, 0, 0, 0.151);
 
 		.navbar__logo {
 			column-gap: 0.25rem;
